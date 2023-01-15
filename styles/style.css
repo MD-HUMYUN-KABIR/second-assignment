@@ -277,7 +277,15 @@ color: #727272;
    transform: scale(1.2);
 background-color: #ff8f0e51;
 }
-
+.item:hover .itemNumber{
+    color: #FF900E;
+    transition: .4s;
+}
+.item:hover .itemText{
+    color: #000000;
+    letter-spacing: 1px;
+    transition: .4s;
+}
 .item{
     width: 250px;
 height: 180px;
@@ -290,7 +298,7 @@ transition: .5s;
 margin-top: 19px;
 }
 
-.item h1{
+.itemNumber{
     font-weight: 600;
     font-size: 40px;
     line-height: 53px;
@@ -298,7 +306,7 @@ margin-top: 19px;
     margin: 8px;
 }
 
-.item p{
+.itemText{
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
@@ -345,7 +353,59 @@ color: #727272;
 }
 
 
+/*  */
+.managing-committee{
+    padding-left: 170px;
+    margin:80px auto;
+}
+.managing-committee > div{
+    background-color: #e5dddd;
+    width: 80%;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.232);
+    border-radius: 20px;
+}
 
+.content-title{
+    font-weight: 700;
+font-size: 25px;
+line-height: 18px;
+color: #131313;
+margin-bottom: 0;
+}
+
+.committee-description{
+    font-weight: 400;
+font-size: 12px;
+line-height: 18px;
+color: #727272;
+}
+.committee-members{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-row-gap:10px ;
+    margin-top: 19px;
+}
+.member img{
+    width: 50px;
+    height:50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.member{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.member h3 {
+    margin-bottom: -10px;
+    font-size: 15px;
+}
+
+.member p {
+    font-size: 12px;
+}
 /*  */
 
 footer{
@@ -482,7 +542,7 @@ padding: 30px 120px;
         text-align: center;
         width: 100%;
         height: 129px;
-        margin-bottom: 70px;
+        margin-bottom: 90px;
     }
 
     .Sponsors-logo {
