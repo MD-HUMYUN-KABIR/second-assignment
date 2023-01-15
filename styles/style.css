@@ -462,7 +462,8 @@ padding: 30px 120px;
         font-size: 35px;
         line-height: 35px;
         width: 100%;
-        height: 67px;
+        height: 90px;
+
     }
 
     br {
@@ -546,11 +547,34 @@ padding: 30px 120px;
     }
 
     .Sponsors-logo {
+        margin-top: 50px;
         flex-direction: column;
         gap: 30px;
         justify-content: center;
     }
 
+    /*  */
+
+
+    .managing-committee{
+        padding-left: 0;
+    }
+    .managing-committee > div{
+        width: 95%;
+        padding: 5px;
+    }
+    
+    
+    .committee-members{
+        grid-template-columns: repeat(1, 1fr);
+    }
+   
+    .member{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
     /*  */
    
 
