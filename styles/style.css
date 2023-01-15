@@ -306,24 +306,26 @@ button.btn-primery {
 }
 
 /* ////// */
-/* hover */
+/* animation */
 /* ////// */
 
-.item:hover {
-    transform: scale(1.2);
-    background-color: #ff8f0e51;
+
+.item {
+    animation: div 1s ease-in-out infinite .5s alternate;
+    animation-play-state: running;
 }
 
-.item:hover .itemNumber {
-    color: #FF900E;
-    transition: .4s;
+@keyframes div {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+        background-color: #ff8f0e51;
+    }
 }
 
-.item:hover .itemText {
-    color: #000000;
-    letter-spacing: 1px;
-    transition: .4s;
-}
 
 .item {
     width: 250px;
