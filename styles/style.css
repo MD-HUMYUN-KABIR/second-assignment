@@ -311,11 +311,11 @@ button.btn-primery {
 
 
 .item {
-    animation: div 1s ease-in-out infinite .5s alternate;
+    animation: item 1s ease-in-out infinite .5s alternate;
     animation-play-state: running;
 }
 
-@keyframes div {
+@keyframes item {
     0% {
         transform: scale(1);
     }
